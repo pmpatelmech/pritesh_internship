@@ -1,0 +1,10 @@
+const mongoose = require("mongoose")
+const ObjectId = mongoose.schema.type.ObjectId
+
+const internModel = new mongoose.schema({
+    name: { type: String, require: "Name is required" },
+    mobile: { type: Number, require: "Mobile number required" },
+    email: { type: String, require: "Email id require" }
+})
+
+module.exports.internModel = internModel
